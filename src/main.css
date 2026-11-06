@@ -55,6 +55,9 @@
 /* Rotate icons and badges back upright */
 #app-mount .wrapper__6e9f8,
 #app-mount .wrapper_JJ-hgR,
+#app-mount .circleIconButton_g8YUxD,
+#app-mount .circleIconButton_1czW-w,
+#app-mount [class*="circleIconButton_"],
 #app-mount .folderPreview__48112,
 #app-mount .folderPreview_RTMSuZ,
 #app-mount .folderIconWrapper__48112,
@@ -72,11 +75,35 @@
 	rotate: 0deg;
 }
 
+#app-mount .circleIconButton_g8YUxD,
+#app-mount .circleIconButton_1czW-w,
+#app-mount [class*="circleIconButton_"],
+#app-mount #guild-discover-button,
+#app-mount .discoveryIcon_5dqHTG {
+	border-radius: 50% !important;
+}
+
 #app-mount .itemsContainer_ef3116,
 #app-mount .stack_dbd263,
-#app-mount .scroller_5dqHTG > div {
+#app-mount .scroller_5dqHTG > div[role="group"] {
 	flex-direction: var(--HSL-server-direction);
 	justify-content: var(--HSL-server-alignment);
+}
+
+/* Ensure all server list items (including Discover button and Add Server) are centered */
+#app-mount .listItem__650eb,
+#app-mount .listItem_rwEpIL,
+#app-mount [class*="listItem_"]:not([class*="listItemWrapper"]) {
+	display: flex !important;
+	justify-content: center !important;
+	align-items: center !important;
+}
+
+#app-mount #guild-discover-button,
+#app-mount .discoveryIcon_5dqHTG {
+	display: flex !important;
+	align-items: center !important;
+	justify-content: center !important;
 }
 
 #app-mount .notice__6e2b9 {
