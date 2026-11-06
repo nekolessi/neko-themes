@@ -6,7 +6,6 @@ export default {
 		version: '1.0.0',
 		description: 'Moves the server list from the left to the top of Discord.',
 		source: 'https://github.com/nekolessi/neko-themes',
-		invite: 'ZHthyCw',
 	},
 	static: true,
 	github: {
