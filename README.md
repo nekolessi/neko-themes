@@ -10,13 +10,13 @@ BetterDiscord Download: [https://betterdiscord.app/theme/Horizontal%20Server%20L
 Vencord link:
 
 ```
-https://raw.githubusercontent.com/DiscordStyles/HorizontalServerList/deploy/HorizontalServerList.theme.css
+https://raw.githubusercontent.com/nekolessi/neko-themes/deploy/HorizontalServerList.theme.css
 ```
 
 ## Contributing
 
-Looking to contribute to HorizontalServerList? Read the the [contributing.md](https://github.com/DiscordStyles/HorizontalServerList/blob/master/CONTRIBUTING.md) file.
+Looking to contribute to HorizontalServerList? Read the the [contributing.md](https://github.com/nekolessi/neko-themes/blob/master/CONTRIBUTING.md) file.
 
 ## License
 
-See the [LICENSE](https://github.com/DiscordStyles/HorizontalServerList/blob/master/LICENSE.md) file for license rights and limitations (MIT).
+See the [LICENSE](https://github.com/nekolessi/neko-themes/blob/master/LICENSE.md) file for license rights and limitations (MIT).

@@ -5,12 +5,13 @@ export default {
 		author: 'Gibbu',
 		version: '3.0.0',
 		description: 'Moves the server list from the left to the top of Discord.',
-		source: 'https://github.com/DiscordStyles/HorizontalServerList',
+		source: 'https://github.com/nekolessi/neko-themes',
 		invite: 'ZHthyCw',
 	},
 	static: true,
 	github: {
-		profile: 'DiscordStyles',
+		profile: 'nekolessi',
+		repo: 'neko-themes',
 	},
 	addons: [{ target: 'src/addons/bottomhsl.css' }],
 };
