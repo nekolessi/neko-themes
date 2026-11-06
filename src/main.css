@@ -3,49 +3,77 @@
 	--serverlist-offset: var(--custom-guild-list-width, 72px);
 }
 
+/* Base grid adjustment for Discord 667580+ subgrid layout */
+@supports (grid-template-columns: subgrid) {
+	#app-mount .base_pog62O {
+		grid-template-columns: [start] 0px [guildsEnd] min-content [channelsEnd] 1fr [end] !important;
+	}
+}
+
+/* Push channels & content down to accommodate horizontal server bar */
 .base__5e434[data-fullscreen='false'] .content__5e434,
-.base__5e434:not([data-fullscreen='true']) .content__5e434 {
+.base__5e434:not([data-fullscreen='true']) .content__5e434,
+#app-mount .base_pog62O .sidebar_pog62O,
+#app-mount .base_pog62O .content_pog62O {
 	margin-top: var(--serverlist-offset);
 	overflow: visible !important;
 }
 
-:fullscreen .content__5e434 {
+:fullscreen .content__5e434,
+:fullscreen .content_pog62O {
 	margin: 0 !important;
 }
 
-#app-mount .sidebar__5e434 {
+#app-mount .sidebar__5e434,
+#app-mount .sidebar_pog62O {
 	border-radius: 0;
 	overflow: visible !important;
 }
 
-#app-mount .guilds__5e434 {
+/* Rotate server list horizontally (both legacy and build 667580+) */
+#app-mount .guilds__5e434,
+#app-mount .guilds_pog62O,
+#app-mount .wrapper_5dqHTG {
 	transform-origin: top left;
 	rotate: -90deg;
 	height: 100vw !important;
-	bottom: unset;
+	bottom: unset !important;
 	position: absolute !important;
-	left: 0;
+	left: 0 !important;
+	margin-bottom: 0 !important;
+	mask: none !important;
+	-webkit-mask: none !important;
+	z-index: 100;
 }
 
-#app-mount .tree_ef3116 {
+#app-mount .tree_ef3116,
+#app-mount .tree_5dqHTG {
 	padding-top: var(--HSL-top-padding, var(--size-sm, 12px));
 	justify-content: var(--HSL-server-alignment);
 }
 
+/* Rotate icons and badges back upright */
 #app-mount .wrapper__6e9f8,
+#app-mount .wrapper_hqZPsU,
 #app-mount .folderPreview__48112,
+#app-mount .folderPreview_RTMSuZ,
 #app-mount .folderIconWrapper__48112,
+#app-mount .folderIconWrapper_RTMSuZ,
 #app-mount .lowerBadge_cc5dd2,
-#app-mount .upperBadge_cc5dd2 {
+#app-mount .lowerBadge_hqZPsU,
+#app-mount .upperBadge_cc5dd2,
+#app-mount .upperBadge_hqZPsU {
 	rotate: 90deg;
 }
 
-#app-mount .childWrapper__6e9f8 {
+#app-mount .childWrapper__6e9f8,
+#app-mount .childWrapper_JJ-hgR {
 	rotate: 0deg;
 }
 
 #app-mount .itemsContainer_ef3116,
-#app-mount .stack_dbd263 {
+#app-mount .stack_dbd263,
+#app-mount .scroller_5dqHTG > div {
 	flex-direction: var(--HSL-server-direction);
 	justify-content: var(--HSL-server-alignment);
 }
@@ -58,8 +86,9 @@
 	--serverlist-offset: calc(var(--notices-height) + var(--custom-guild-list-width, 72px));
 }
 
-/* BetterFolders - Vencord */
-.container__5e434 > div[style]:not(.base__5e434) {
+/* BetterFolders compatibility */
+.container__5e434 > div[style]:not(.base__5e434),
+.container_pog62O > div[style]:not(.base_pog62O) {
 	width: 100vw !important;
 	height: var(--serverlist-offset) !important;
 	position: absolute;
@@ -67,11 +96,13 @@
 	pointer-events: none;
 	z-index: 1;
 
-	.guilds__5e434 {
+	.guilds__5e434,
+	.wrapper_5dqHTG {
 		pointer-events: all;
 	}
 
-	& + .base__5e434 .content__5e434 {
+	& + .base__5e434 .content__5e434,
+	& + .base_pog62O .content_pog62O {
 		margin-top: calc(var(--serverlist-offset) * 2);
 	}
 }
