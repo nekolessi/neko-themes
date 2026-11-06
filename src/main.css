@@ -1,7 +1,21 @@
+/**
+ * Horizontal Server List
+ * Source: https://github.com/nekolessi/neko-themes
+ */
+
+/* ==========================================================================
+   1. Variables & Configuration
+   ========================================================================== */
 :root {
+	--HSL-server-direction: column; /* Direction: column | column-reverse */
+	--HSL-server-alignment: flex-start; /* Alignment: flex-start | center | flex-end */
 	--notices-height: 36px;
 	--serverlist-offset: var(--custom-guild-list-width, 72px);
 }
+
+/* ==========================================================================
+   2. Layout & Base Grid Positioning
+   ========================================================================== */
 
 /* Base grid adjustment for Discord 667580+ subgrid layout */
 @supports (grid-template-columns: subgrid) {
@@ -10,7 +24,7 @@
 	}
 }
 
-/* Push channels & content down to accommodate horizontal server bar */
+/* Push channels & content down to accommodate the top horizontal server bar */
 .base__5e434[data-fullscreen='false'] .content__5e434,
 .base__5e434:not([data-fullscreen='true']) .content__5e434,
 #app-mount .base_pog62O .content_pog62O {
@@ -29,7 +43,11 @@
 	overflow: visible !important;
 }
 
-/* Rotate server list horizontally (both legacy and build 667580+) */
+/* ==========================================================================
+   3. Horizontal Server List Container
+   ========================================================================== */
+
+/* Rotate server list horizontally (supports legacy and build 667580+) */
 #app-mount .guilds__5e434,
 #app-mount .guilds_pog62O,
 #app-mount .wrapper_5dqHTG {
@@ -52,7 +70,11 @@
 	justify-content: var(--HSL-server-alignment);
 }
 
-/* Rotate icons and badges back upright */
+/* ==========================================================================
+   4. Orientation Recovery (Upright Rotation)
+   ========================================================================== */
+
+/* Rotate server icons, circular buttons, folders, and notification badges back upright */
 #app-mount .wrapper__6e9f8,
 #app-mount .wrapper_JJ-hgR,
 #app-mount .circleIconButton_g8YUxD,
@@ -75,14 +97,11 @@
 	rotate: 0deg;
 }
 
-#app-mount .circleIconButton_g8YUxD,
-#app-mount .circleIconButton_1czW-w,
-#app-mount [class*="circleIconButton_"],
-#app-mount #guild-discover-button,
-#app-mount .discoveryIcon_5dqHTG {
-	border-radius: 50% !important;
-}
+/* ==========================================================================
+   5. Server List Items & Action Buttons (Add Server & Discover)
+   ========================================================================== */
 
+/* Server items direction and alignment within group container */
 #app-mount .itemsContainer_ef3116,
 #app-mount .stack_dbd263,
 #app-mount .scroller_5dqHTG > div[role="group"] {
@@ -99,13 +118,21 @@
 	align-items: center !important;
 }
 
+/* Circular action buttons (+ Add Server and Discover Compass) */
+#app-mount .circleIconButton_g8YUxD,
+#app-mount .circleIconButton_1czW-w,
+#app-mount [class*="circleIconButton_"],
 #app-mount #guild-discover-button,
 #app-mount .discoveryIcon_5dqHTG {
 	display: flex !important;
 	align-items: center !important;
 	justify-content: center !important;
+	border-radius: 50% !important;
 }
 
+/* ==========================================================================
+   6. Notices & In-App Banners
+   ========================================================================== */
 #app-mount .notice__6e2b9 {
 	height: var(--notices-height);
 }
@@ -114,7 +141,9 @@
 	--serverlist-offset: calc(var(--notices-height) + var(--custom-guild-list-width, 72px));
 }
 
-/* BetterFolders compatibility */
+/* ==========================================================================
+   7. Plugin Compatibility (BetterFolders)
+   ========================================================================== */
 .container__5e434 > div[style]:not(.base__5e434) {
 	width: 100vw !important;
 	height: var(--serverlist-offset) !important;
