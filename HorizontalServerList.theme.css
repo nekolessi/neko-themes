@@ -3,11 +3,11 @@
  * @author Gibbu
  * @version 3.0.0
  * @description Moves the server list from the left to the top of Discord.
- * @source https://github.com/DiscordStyles/HorizontalServerList
+ * @source https://github.com/nekolessi/neko-themes
  * @invite ZHthyCw
  */
 
-@import url('https://discordstyles.github.io/HorizontalServerList/HorizontalServerList.css');
+@import url('https://nekolessi.github.io/neko-themes/HorizontalServerList.css');
 
 /* Bottom HorizontalServerList. Simply remove the comments surrounding the @import to enable it. */
 /* @import url("https://discordstyles.github.io/HorizontalServerList/bottomhsl.css"); */
