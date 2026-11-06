@@ -13,7 +13,6 @@
 /* Push channels & content down to accommodate horizontal server bar */
 .base__5e434[data-fullscreen='false'] .content__5e434,
 .base__5e434:not([data-fullscreen='true']) .content__5e434,
-#app-mount .base_pog62O .sidebar_pog62O,
 #app-mount .base_pog62O .content_pog62O {
 	margin-top: var(--serverlist-offset) !important;
 	overflow: visible !important;
@@ -37,7 +36,7 @@
 	transform-origin: top left;
 	rotate: -90deg;
 	height: 100vw !important;
-	top: calc(var(--serverlist-offset) + var(--custom-app-top-bar-height, 0px)) !important;
+	top: 0 !important;
 	bottom: unset !important;
 	position: absolute !important;
 	left: 0 !important;
