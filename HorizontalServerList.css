@@ -1,5 +1,7 @@
 /* --- src/main.css --- */
 :root {
+  --HSL-server-direction: column;
+  --HSL-server-alignment: flex-start;
   --notices-height: 36px;
   --serverlist-offset: var(--custom-guild-list-width, 72px);
 }
@@ -51,16 +53,19 @@
   rotate: 0deg;
 }
 
-#app-mount .circleIconButton_g8YUxD, #app-mount .circleIconButton_1czW-w, #app-mount [class*="circleIconButton_"], #app-mount #guild-discover-button, #app-mount .discoveryIcon_5dqHTG {
-  border-radius: 50% !important;
-}
-
 #app-mount .itemsContainer_ef3116, #app-mount .stack_dbd263, #app-mount .scroller_5dqHTG > div[role="group"] {
   flex-direction: var(--HSL-server-direction);
   justify-content: var(--HSL-server-alignment);
 }
 
-#app-mount .listItem__650eb, #app-mount .listItem_rwEpIL, #app-mount [class*="listItem_"]:not([class*="listItemWrapper"]), #app-mount #guild-discover-button, #app-mount .discoveryIcon_5dqHTG {
+#app-mount .listItem__650eb, #app-mount .listItem_rwEpIL, #app-mount [class*="listItem_"]:not([class*="listItemWrapper"]) {
+  justify-content: center !important;
+  align-items: center !important;
+  display: flex !important;
+}
+
+#app-mount .circleIconButton_g8YUxD, #app-mount .circleIconButton_1czW-w, #app-mount [class*="circleIconButton_"], #app-mount #guild-discover-button, #app-mount .discoveryIcon_5dqHTG {
+  border-radius: 50% !important;
   justify-content: center !important;
   align-items: center !important;
   display: flex !important;
