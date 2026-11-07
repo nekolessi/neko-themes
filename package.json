@@ -1,5 +1,8 @@
 {
-	"private": false,
+	"name": "neko-themes-hsl",
+	"version": "1.0.0",
+	"description": "scuffed horizontal server list for discord :3",
+	"private": true,
 	"type": "module",
 	"scripts": {
 		"dev": "bun --bun bd-css dev",
