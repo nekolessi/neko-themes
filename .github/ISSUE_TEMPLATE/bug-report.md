@@ -16,11 +16,11 @@ assignees: ''
 ### Screenshots
 *If applicable, add screenshots to help explain your problem*
 
-### Infomation (please complete the following information)
+### Information (please complete the following information)
 **Discord channel**: *Stable/PTB/Canary*  
 **OS**: *Windows/Linux/OSX*  
-**Mod**: *BetterDiscord/Powercord/GooseMod*  
+**Mod**: *Vencord/BetterDiscord*  
 **Discord language**: *Your language*  
 
 ### Additional context
-*Add any other context about the problem here. Remove if not applicable.*  
+*Add any other context about the problem here. Remove if not applicable.*
