@@ -1,9 +1,6 @@
 # 🌸 horizontal server list (neko edition) 🌸
 
-
 moves the discord server list from the left side to the top bc having it on the left makes my brain hurt, and discord updated and broke everything so i had to panic fix it ;w;
-
-based off [DiscordStyles/HorizontalServerList: Moves the server list from the left to the top of Discord.](https://github.com/DiscordStyles/HorizontalServerList) bc the original broke on new updates and i needed my servers sideways or i was gonna die.
 
 ---
 
