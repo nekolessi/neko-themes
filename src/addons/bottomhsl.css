@@ -16,7 +16,7 @@
 #app-mount .guilds__5e434,
 #app-mount .guilds_pog62O,
 #app-mount .wrapper_5dqHTG {
-	top: 100% !important;
+	top: calc(100% + var(--serverlist-offset)) !important;
 	bottom: unset !important;
 }
 

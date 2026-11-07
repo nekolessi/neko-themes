@@ -58,7 +58,7 @@
   transform-origin: top left;
   rotate: -90deg;
   height: 100vw !important;
-  top: 100% !important;
+  top: calc(100% + var(--serverlist-offset)) !important;
   bottom: unset !important;
   position: absolute !important;
   left: 0 !important;
