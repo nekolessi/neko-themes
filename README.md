@@ -1,6 +1,5 @@
 # 🌸 horizontal server list (neko edition) 🌸
 
-> *"i have no idea what css is i just cried and moved brackets until it stopped breaking"* — me :3
 
 moves the discord server list from the left side to the top bc having it on the left makes my brain hurt, and discord updated and broke everything so i had to panic fix it ;w;
 
