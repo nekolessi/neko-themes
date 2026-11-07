@@ -9,7 +9,7 @@
 @import url('https://nekolessi.github.io/neko-themes/HorizontalServerList.css');
 
 /* Bottom HorizontalServerList. Simply remove the comments surrounding the @import to enable it. */
-/* @import url("https://discordstyles.github.io/HorizontalServerList/bottomhsl.css"); */
+/* @import url("https://nekolessi.github.io/neko-themes/bottomhsl.css"); */
 
 :root {
 	--HSL-server-direction: column; /* Direction of the server list. | OPTIONS: column, column-reverse | DEFAULT: column */

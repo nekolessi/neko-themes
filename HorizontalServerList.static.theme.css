@@ -7,7 +7,7 @@
  */
 
 /* Bottom HorizontalServerList. Simply remove the comments surrounding the @import to enable it. */
-/* @import url("https://discordstyles.github.io/HorizontalServerList/bottomhsl.css"); */
+/* @import url("https://nekolessi.github.io/neko-themes/bottomhsl.css"); */
 
 :root {
 	--HSL-server-direction: column; /* Direction of the server list. | OPTIONS: column, column-reverse | DEFAULT: column */
@@ -103,11 +103,12 @@
   width: 100vw !important;
   height: var(--serverlist-offset) !important;
 
-  & .guilds__5e434 {
+  & .guilds__5e434, & .guilds_pog62O, & .wrapper_5dqHTG {
     pointer-events: all;
+    top: calc(100% + var(--serverlist-offset) * 2) !important;
   }
 
-  & + .base__5e434 .content__5e434 {
+  & + .base__5e434 .content__5e434, & + .base_pog62O .content_pog62O {
     margin-top: calc(var(--serverlist-offset) * 2) !important;
   }
 }
